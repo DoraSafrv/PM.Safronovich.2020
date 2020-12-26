@@ -1,11 +1,18 @@
 #pragma once
 #include <iostream>
-class Time {
+#include <string>
+class Time{
 public:
 	Time(int hh, int mm, int ss) {
 		this->h = hh;
 		this->m = mm;
 		this->s = ss;
+		if (h < 12) {
+			isMorning = true;
+		}
+		else {
+			isMorning = false;
+		}
 
 	}
 	void setH(int hh) {
@@ -33,4 +40,6 @@ public:
 	int h;
 	int m;
 	int s;
+	bool isMorning;
 };
+

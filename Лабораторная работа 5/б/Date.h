@@ -35,4 +35,3 @@ public:
 	int mm;
 	int gg;
 };
-
